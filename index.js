@@ -17,9 +17,9 @@ const contact = document.getElementById("navContact")
 const bd = document.getElementById("bd")
 const bd2 = document.getElementById("bd2")
 
-bd.addEventListener('click', () => {
-    menu.classList.remove("show")
-})
+// bd.addEventListener('click', () => {
+//     menu.classList.remove("show")
+// })
 
 window.addEventListener('scroll', () => {
     //home
@@ -95,24 +95,26 @@ window.addEventListener('scroll', () => {
 
 const glide = document.querySelector(".glide")
 if (glide)
-    new Glide(glide, {
-        type: 'carousel',
-        startAt: 0,
-        perView: 2,
-        gap: 30,
-        hoverpause: true,
-        autoplay: 2000,
-        animationDuration: 800,
-        animationTimingFunc: 'ease-in-out',
-        breakpoints: {
-            996: {
-                perView: 2
+    {
+        new Glide(glide, {
+            type: 'carousel',
+            startAt: 0,
+            perView: 2,
+            gap: 30,
+            hoverpause: true,
+            autoplay: 2000,
+            animationDuration: 800,
+            animationTimingFunc: 'ease-in-out',
+            breakpoints: {
+                996: {
+                    perView: 2
+                },
+                768: {
+                    perView: 1
+                },
             },
-            768: {
-                perView: 1
-            },
-        },
-    }).mount()
+        }).mount()
+    }
 
 
 
