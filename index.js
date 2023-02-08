@@ -3,12 +3,10 @@ const navOpen = document.querySelector(".hamburger")
 const navClose = document.querySelector(".close")
 const navBar = document.querySelector(".navbar")
 const navLink = document.querySelector(".nav-list")
-// const navItem = document.querySelector(".nav-link")
 const home = document.getElementById('navHome')
 const skills = document.getElementById("navSkills")
 const about = document.getElementById("navAbout")
 const project = document.getElementById("navProject")
-const github = document.getElementById("navGithub")
 const contact = document.getElementById("navContact")
 
 
@@ -29,33 +27,25 @@ window.addEventListener('scroll', () => {
         home.classList.remove("highlight")
     }
     //about
-    if (window.pageYOffset >= 571 && window.pageYOffset <= 1280) {
+    if (window.pageYOffset >= 571 && window.pageYOffset <= 1099) {
         about.classList.add("highlight")
     } else {
         about.classList.remove("highlight")
     }
     //skills
-    if (window.pageYOffset >= 1282 && window.pageYOffset <= 1869) {
+    if (window.pageYOffset >= 1100 && window.pageYOffset <= 1299) {
         skills.classList.add("highlight")
     } else {
         skills.classList.remove("highlight")
     }
     //project
-    if (window.pageYOffset >= 1871 && window.pageYOffset <= 2519) {
+    if (window.pageYOffset >= 1300 && window.pageYOffset <= 1850) {
         project.classList.add("highlight")
     } else {
         project.classList.remove("highlight")
     }
 
-    //github
-    if (window.pageYOffset >= 2520 && window.pageYOffset <= 2800) {
-        github.classList.add("highlight")
-    } else {
-        github.classList.remove("highlight")
-    }
-
-    //contact
-    if (window.pageYOffset >= 2800) {
+    if (window.pageYOffset >= 1851) {
         contact.classList.add("highlight")
     } else {
         contact.classList.remove("highlight")
