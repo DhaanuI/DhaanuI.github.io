@@ -54,7 +54,7 @@
                             <a href="#contact" class="nav-link contact" id="navContact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./resume/Dhaanu_I_Resume.pdf" class="nav-link resume" id=" navResume" download>Resume</a>
+                            <a href="./resume/Dhaanu_I_Resume.pdf" class="nav-link resume" id=" navResume" id="resume-button-1" download>Resume</a>
                         </li>
                     </ul>
                 </div>
@@ -71,7 +71,7 @@
                     <h1 id="user-detail-name">Dhaanu I</h1>
                     <h1 style="color: #dd9a05;">Full Stack Web Developer</h1>
                     <h3><i class="fas fa-play"></i> <span id="type1"></span></h3>
-                    <a target="_blank" rel="noopener noreferrer"  href="./resume/Dhaanu_I_Resume.pdf" class="btn" download>
+                    <a id="resume-button-2" target="_blank" rel="noopener noreferrer"  href="./resume/Dhaanu_I_Resume.pdf" class="btn" download>
                         Resume
                     </a>
                 </div>
@@ -251,19 +251,19 @@
 
 
         <div style="display:flex;margin: auto;" id="gihub-stats">
-            <p style="margin: auto;margin-right:-60px"><img
+            <p  id="github-top-langs" style="margin: auto;margin-right:-60px"><img
                     src="https://github-readme-stats.vercel.app/api/top-langs?username=DhaanuI&show_icons=true&locale=en&layout=compact"
-                    alt="DhaanuI" /></p>
+                    alt="DhaanuIlang" /></p>
 
-            <p style="margin: auto;">&nbsp;<img
+            <p id="github-stats-card style="margin: auto;">&nbsp;<img
                     src="https://github-readme-stats.vercel.app/api?username=DhaanuI&show_icons=true&locale=en"
-                    alt="DhaanuI" /></p>
+                    alt="DhaanuIstats" /></p>
 
         </div>
 
         <div id="stats">
-            <p style="margin: auto;text-align: center;">&nbsp;<img
-                    src="https://github-readme-streak-stats.herokuapp.com?user=DhaanuI" alt="DhaanuI" /></p>
+            <p  id="github-streak-stats" style="margin: auto;text-align: center;">&nbsp;<img
+                    src="https://github-readme-streak-stats.herokuapp.com?user=DhaanuI" alt="DhaanuIstreak" /></p>
         </div>
 
         <br>
@@ -274,8 +274,8 @@
             <h1 style="text-align: center;">My Github Calender</h1>
         </div>
 
-
-        <div class="calendar">
+<!-- //previously it had only calendar class -->
+        <div class="react-activity-calendar calendar" >
 
             <!-- Loading stuff -->
             Loading the data just for you.
