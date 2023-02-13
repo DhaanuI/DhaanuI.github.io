@@ -70,7 +70,7 @@ navLink.addEventListener('click', () => {
 
 
 
-navbar fixation 
+//navbar fixation 
 const navHeight = navBar.getBoundingClientRect().height
 window.addEventListener('scroll', () => {
     const scrollHeight = window.pageYOffset
