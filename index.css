@@ -12,7 +12,7 @@
 }
 
 /* Tooltip text */
-.tooltip .tooltiptext {
+.tooltip .skills-card-name {
   visibility: hidden;
   width: 120px;
   background-color: wheat;
@@ -31,7 +31,7 @@
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
+.tooltip:hover .skills-card-name {
     margin-bottom: 10px;
   visibility: visible;
 }
@@ -525,7 +525,13 @@ a.btn:active{
 .project:hover .img-cover{
     border-color: #fff;
 }
-.projBtns {
+.project-deployed-link {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+
+.project-github-link{
     margin-right: 10px;
     margin-top: 5px;
 }
