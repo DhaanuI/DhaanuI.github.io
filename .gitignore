@@ -3,6 +3,6 @@
 node_modules
 ##after_spec_results.json
 package-lock.json
-##results.json
+results.json
 #submissionData.jsongit 
 
