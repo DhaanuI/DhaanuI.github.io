@@ -3,11 +3,11 @@ const navOpen = document.querySelector(".hamburger")
 const navClose = document.querySelector(".close")
 const navBar = document.querySelector(".navbar")
 const navLink = document.querySelector(".nav-list")
-const home = document.getElementById('navHome')
-const skills = document.getElementById("navSkills")
-const about = document.getElementById("navAbout")
-const project = document.getElementById("navProject")
-const contact = document.getElementById("navContact")
+const home = document.getElementsByClassName('nav-link home')
+const skills = document.getElementsByClassName("nav-link skills")
+const about = document.getElementsByClassName("nav-link about")
+const project = document.getElementsByClassName("nav-link projects")
+const contact = document.getElementsByClassName("nav-link contact")
 
 
 
@@ -71,15 +71,15 @@ navLink.addEventListener('click', () => {
 
 
 //navbar fixation 
-const navHeight = navBar.getBoundingClientRect().height
-window.addEventListener('scroll', () => {
-    const scrollHeight = window.pageYOffset
-    if (scrollHeight > navHeight) {
-        navBar.classList.add('fix-nav')
-    } else {
-        navBar.classList.remove('fix-nav')
-    }
-})
+// const navHeight = navBar.getBoundingClientRect().height
+// window.addEventListener('scroll', () => {
+//     const scrollHeight = window.pageYOffset
+//     if (scrollHeight > navHeight) {
+//         navBar.classList.add('fix-nav')
+//     } else {
+//         navBar.classList.remove('fix-nav')
+//     }
+// })
 
 //GlideJs
 
