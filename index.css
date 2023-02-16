@@ -73,7 +73,6 @@ li {
     }
 }
 
-/* change color here */
 .header{
     position: relative;
     width: 100%;
@@ -110,7 +109,7 @@ li {
     align-items: center;
     justify-content: space-between;
 }
-.banner {
+.home-img {
     height: 350px;
     width: 340px;
     border-radius: 50%;
@@ -267,6 +266,10 @@ li {
     .githubstats{
         width: 100%;
     }
+    .nav-item>.about
+    {
+        margin-top:-7px
+    }
 }
 @media only screen and (max-width: 768px){
     .hero > h1{
@@ -291,7 +294,7 @@ li {
     }
 }
 @media only screen and (max-width: 900px){
-    .banner{
+    .home-img{
         width: 220px;
         height: 220px;
         margin-top: 300px;
@@ -299,7 +302,7 @@ li {
     }
 }
 @media only screen and (max-width: 700px){
-    .banner{
+    .home-img{
         width: 180px;
         height: 180px;
         margin-top: 350px;
@@ -307,7 +310,7 @@ li {
     }
 }
 @media only screen and (max-width: 550px){
-    .banner{
+    .home-img{
         width: 150px;
         height: 150px;
         margin-top: 350px;
@@ -315,7 +318,7 @@ li {
     }
 }
 @media only screen and (max-width: 400px){
-    .banner{
+    .home-img{
         display: none;
     }
 }
@@ -367,8 +370,6 @@ li {
     position: relative;
     z-index: 0;
 }
-
-
 .title h1::after{
     content: ' ';
     position: absolute;
@@ -417,7 +418,28 @@ li {
     color: #dd9a05
 }
 
-a.btn {
+ a.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #dd9a05;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: 2px solid #dd9a05;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    transition: all 300ms ease-out;
+} 
+
+ a.btn:hover{
+    transform: translateY(-3px);
+    background: transparent;
+    color: #dd9a05;
+}
+
+a.btn:active{
+    transform: translateY(0px)
+} 
+
+#resume-link-2 {
     display: inline-block;
     padding: 1rem 2rem;
     background-color: #dd9a05;
@@ -428,14 +450,18 @@ a.btn {
     transition: all 300ms ease-out;
 }
 
-a.btn:hover{
+a:hover{
     transform: translateY(-3px);
     background: transparent;
     color: #dd9a05;
+    
 }
-a.btn:active{
+
+a:active{
     transform: translateY(0px)
 }
+
+
 @media only screen and (max-width: 996px){
     .right h1{
         font-size: 2rem;
@@ -449,6 +475,10 @@ a.btn:active{
     .left img{
         height: 40rem;
         max-width: 25rem;
+    }
+    .nav-item>.about
+    {
+        margin-top:-7px
     }
 }
 
@@ -485,7 +515,7 @@ a.btn:active{
     border-radius: 1rem;
     border-bottom: 4px solid transparent;
     transition: all 300ms ease-in-out;
-    height: 44rem;
+    height: 52rem;
 }
 @media only screen and (max-width: 380px){
     .project{
@@ -525,13 +555,7 @@ a.btn:active{
 .project:hover .img-cover{
     border-color: #fff;
 }
-.project-deployed-link {
-    margin-right: 10px;
-    margin-top: 5px;
-}
-
-
-.project-github-link{
+.projBtns {
     margin-right: 10px;
     margin-top: 5px;
 }
@@ -547,7 +571,7 @@ a.btn:active{
 
 }
 
-.skills {
+#skills {
     background-color: rgb(54, 51, 56);
     color: white;
 }
@@ -573,6 +597,10 @@ a.btn:active{
     }
     .skillImgs{
         justify-content: center;
+    }
+    .nav-item>.about
+    {
+        margin-top:-7px
     }
 }
 @media only screen and (max-width: 590px){
@@ -632,6 +660,10 @@ footer {
         flex-direction: column;
         width: 70%;
         margin: auto;
+    }
+    .nav-item>.about
+    {
+        margin-top:-7px
     }
 }
 footer p{
