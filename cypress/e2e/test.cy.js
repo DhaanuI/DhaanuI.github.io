@@ -333,7 +333,7 @@ describe("Test", function () {
                 });
                 cy.get('[id="resume-link-1"]')
                   .invoke("removeAttr", "target")
-                  .click();
+                  .click({ force: true });
                 cy.url().then((currUrl) => {
                   expect(
                     currUrl,
