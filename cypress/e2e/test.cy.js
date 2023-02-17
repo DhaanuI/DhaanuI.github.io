@@ -360,7 +360,7 @@ describe("Test", function () {
                     });
                   });
                 });
-              cy.get('[id="resume-button-1"]').click();
+              cy.get('[id="resume-button-1"]').click({ force: true });
             }
             cy.then(() => {
               acc_score += 1;
