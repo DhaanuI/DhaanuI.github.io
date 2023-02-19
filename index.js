@@ -19,38 +19,38 @@ const bd2 = document.getElementById("bd2")
 //     menu.classList.remove("show")
 // })
 
-window.addEventListener('scroll', () => {
-    //home
-    if (window.pageYOffset >= 58 && window.pageYOffset < 571) {
-        home.classList.add("highlight")
-    } else {
-        home.classList.remove("highlight")
-    }
-    //about
-    if (window.pageYOffset >= 571 && window.pageYOffset <= 1099) {
-        about.classList.add("highlight")
-    } else {
-        about.classList.remove("highlight")
-    }
-    //skills
-    if (window.pageYOffset >= 1100 && window.pageYOffset <= 1449) {
-        skills.classList.add("highlight")
-    } else {
-        skills.classList.remove("highlight")
-    }
-    //project
-    if (window.pageYOffset >= 1450 && window.pageYOffset <= 1950) {
-        project.classList.add("highlight")
-    } else {
-        project.classList.remove("highlight")
-    }
+// window.addEventListener('scroll', () => {
+//     //home
+//     if (window.pageYOffset >= 58 && window.pageYOffset < 571) {
+//         home.classList.add("highlight")
+//     } else {
+//         home.classList.remove("highlight")
+//     }
+//     //about
+//     if (window.pageYOffset >= 571 && window.pageYOffset <= 1099) {
+//         about.classList.add("highlight")
+//     } else {
+//         about.classList.remove("highlight")
+//     }
+//     //skills
+//     if (window.pageYOffset >= 1100 && window.pageYOffset <= 1449) {
+//         skills.classList.add("highlight")
+//     } else {
+//         skills.classList.remove("highlight")
+//     }
+//     //project
+//     if (window.pageYOffset >= 1450 && window.pageYOffset <= 1950) {
+//         project.classList.add("highlight")
+//     } else {
+//         project.classList.remove("highlight")
+//     }
 
-    if (window.pageYOffset >= 1951) {
-        contact.classList.add("highlight")
-    } else {
-        contact.classList.remove("highlight")
-    }
-})
+//     if (window.pageYOffset >= 1951) {
+//         contact.classList.add("highlight")
+//     } else {
+//         contact.classList.remove("highlight")
+//     }
+// })
 
 bd2.addEventListener('click', () => {
     menu.classList.remove("show")
