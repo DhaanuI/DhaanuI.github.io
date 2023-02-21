@@ -333,7 +333,7 @@ describe("Test", function () {
                 });
                 cy.get('[id="resume-link-1"]')
                   .invoke("removeAttr", "target")
-                  .click({ force: true });
+                  .click();
                 cy.url().then((currUrl) => {
                   expect(
                     currUrl,
@@ -360,7 +360,7 @@ describe("Test", function () {
                     });
                   });
                 });
-              cy.get('[id="resume-button-1"]').click({ force: true });
+              cy.get('[id="resume-button-1"]').click();
             }
             cy.then(() => {
               acc_score += 1;
