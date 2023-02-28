@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -6,34 +6,64 @@
 }
 
 .skills-card {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
 }
 
 /* skills-card text */
 .skills-card .skills-card-name {
-  visibility: hidden;
-  width: 120px;
-  background-color: wheat;
-  color: black;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  /* Position the skills-card text - see examples below! */
-  position: absolute;
-  z-index: 1;
-  width: 120px;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
+    visibility: hidden;
+    width: 120px;
+    background-color: wheat;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the skills-card text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
 }
 
-/* Show the skills-card text when you mouse over the skills-card container */
+.tooltipLinkedin,
+.tooltipgit{
+    visibility: hidden;
+    width: 120px;
+    background-color: wheat;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the skills-card text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+
+}
+
+
+#hoverlinked:hover ~ .tooltipLinkedin {
+    visibility: visible;
+    
+}
+
+#hovergit:hover ~.tooltipgit {
+    visibility: visible;
+}
+
+
 .skills-card:hover .skills-card-name {
     margin-bottom: 10px;
-  visibility: visible;
+    visibility: visible;
 }
 
 html {
@@ -41,7 +71,7 @@ html {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
@@ -51,11 +81,14 @@ body{
     z-index: 0;
 }
 
-h1, h2, h4, h3 {
+h1,
+h2,
+h4,
+h3 {
     font-weight: 500;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -72,7 +105,7 @@ li {
     margin: 0 auto;
 }
 
-.header{
+.header {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -80,34 +113,53 @@ li {
     z-index: 1;
 }
 
-.navbar{
+.navbar {
     color: #fff;
     padding: 1.6rem 2rem;
 }
 
-.highlight{
+.highlight {
     color: black !important;
     font-weight: 600;
     border-radius: 8px;
 }
 
-.navbar.fix-nav{
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    background-color: #dd9a05;
-    transition: all 600ms ease-in-out;
-    box-shadow: 0 5px 15px rgba(163, 152, 152, 0.1);
-    z-index:999;
+.resumeButton {
+    border-color: #04AA6D;
+    color: green;
 }
 
-.top-nav{
+.resumeButton:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* .resumeButton:hover{
+    background-color:  #dd9a05;
+     color: white;
+} */
+
+.navbar.fix-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(54, 51, 56);
+    transition: all 600ms ease-in-out;
+    box-shadow: 0 5px 15px rgba(163, 152, 152, 0.1);
+    z-index: 999;
+}
+
+
+
+
+
+.top-nav {
     display: none;
 
 }
 
-.navContainer{
+.navContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -143,7 +195,7 @@ li {
 .logo p {
     font-size: 2rem;
     color: #fff;
-    font-family:'Brush Script MT';
+    font-family: 'Brush Script MT';
     cursor: pointer;
 }
 
@@ -152,26 +204,27 @@ li {
     align-items: center;
 }
 
-.nav-item:not(:last-child){
+.nav-item:not(:last-child) {
     margin-right: 0.5rem;
 }
 
-.nav-link:link, .nav-link:visited{
+.nav-link:link,
+.nav-link:visited {
     color: #fff;
     padding: 0.8rem;
     transition: all 300ms ease-in-out;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     border-radius: 0.3rem;
     background-color: #dd9a05;
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
-.hero{
+.homedata {
     /* padding-left:8% ; */
     position: absolute;
     top: 50%;
@@ -179,28 +232,29 @@ li {
     color: #fff;
 }
 
-.hero h3{
+.homedata h3 {
     font-weight: 400;
 }
 
-.hero h1{
+.homedata h1 {
     font-size: 4.6rem;
 }
 
-.hero h4{
+.homedata h4 {
     font-size: 1.5rem;
 }
 
-.hero h3{
+.homedata h3 {
     color: #dd9a05;
 }
 
-.hero h3 span{
+.homedata h3 span {
     color: #fff;
     text-decoration: underline;
 }
 
-.hero a:link, .hero a:visited{
+.homedata a:link,
+.homedata a:visited {
     display: inline-block;
     padding: .8rem 2.5rem;
     border: 1px solid #dd9a05;
@@ -209,7 +263,7 @@ li {
     margin-top: 2rem;
 }
 
-.hero:hover{
+.homedata:hover {
     background-color: transparent;
 }
 
@@ -220,13 +274,13 @@ li {
     color: #fff;
 }
 
-.icons span *{
+.icons span * {
     text-decoration: none;
     color: white;
     font-size: 30px;
 }
 
-.icons span:not(:last-child){
+.icons span:not(:last-child) {
     margin-right: 1rem;
 }
 
@@ -236,8 +290,8 @@ li {
     transition: all 300ms ease-in-out;
 }
 
-.icons span *:hover{
-    color:  #dd9a05;
+.icons span *:hover {
+    color: #dd9a05;
 }
 
 /* @media only screen and (max-width: 600px){
@@ -256,18 +310,19 @@ li {
     margin-top: 5rem;
 }
 
-.title{
+.title {
     margin: 4rem 0 7rem 0;
     text-align: center;
 }
 
-.title h1{
+.title h1 {
     font-size: 3rem;
     display: inline-block;
     position: relative;
     z-index: 0;
 }
-.title h1::after{
+
+.title h1::after {
     content: ' ';
     position: absolute;
     left: 50%;
@@ -279,7 +334,7 @@ li {
     z-index: 1;
 }
 
-.about-center{
+.about-center {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 3rem 5rem
@@ -291,21 +346,21 @@ li {
     object-fit: cover;
 }
 
-.right h1{
+.right h1 {
     margin-bottom: 2rem;
 }
 
-.githubstats{
+.githubstats {
     width: 60%;
     margin: auto;
 }
 
-.githubstats1{
+.githubstats1 {
     width: 100%;
 }
 
 
-.right h1{
+.right h1 {
     margin-bottom: 2rem;
 }
 
@@ -314,30 +369,31 @@ li {
     margin-bottom: 2rem;
     color: #333;
 }
-.right h1 span{
+
+.right h1 span {
     color: #dd9a05
 }
 
- a.btn {
+a.btn {
     display: inline-block;
     padding: 1rem 2rem;
     background-color: #dd9a05;
     color: #fff;
     border-radius: 0.5rem;
     border: 2px solid #dd9a05;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     transition: all 300ms ease-out;
-} 
+}
 
- a.btn:hover{
+a.btn:hover {
     transform: translateY(-3px);
     background: transparent;
     color: #dd9a05;
 }
 
-a.btn:active{
+a.btn:active {
     transform: translateY(0px)
-} 
+}
 
 #resume-link-2 {
     display: inline-block;
@@ -346,18 +402,18 @@ a.btn:active{
     color: #fff;
     border-radius: 0.5rem;
     border: 2px solid #dd9a05;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     transition: all 300ms ease-out;
 }
 
-a:hover{
+a:hover {
     transform: translateY(-3px);
     background: transparent;
     color: #dd9a05;
-    
+
 }
 
-a:active{
+a:active {
     transform: translateY(0px)
 }
 
@@ -365,18 +421,18 @@ a:active{
     background-color: #fff;
 }
 
-.theme .title{
+.theme .title {
     color: #000;
 }
 
-.projects-center{
-    display:grid;
+.projects-center {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 3rem;
-    
+
 }
 
-.project{
+.project {
     color: #fff;
     background-color: rgb(54, 51, 56);
     padding: 2rem;
@@ -385,7 +441,7 @@ a:active{
     border-bottom: 4px solid transparent;
     transition: all 300ms ease-in-out;
     height: 58rem;
-   
+
 }
 
 .project .img-cover {
@@ -404,7 +460,7 @@ a:active{
     object-fit: cover;
 }
 
-.project h2{
+.project h2 {
     font-size: 1.8rem;
     margin: 1rem 0;
 }
@@ -420,11 +476,11 @@ a:active{
     
 } */
 
-.project:hover{
+.project:hover {
     color: #dd9a05;
 }
 
-.project:hover .img-cover{
+.project:hover .img-cover {
     border-color: #fff;
 }
 
@@ -434,16 +490,16 @@ a:active{
 }
 
 /* main css for project grid */
-.glide__slides{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:10px;
-    
+.glide__slides {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
 }
 
 /* contact */
 
-.left h2{
+.left h2 {
     font-size: 2rem;
 }
 
@@ -458,41 +514,41 @@ a:active{
     color: white;
 }
 
-.skills-center{
+.skills-center {
     display: flex;
     justify-content: space-around;
 }
 
-.skills-center h3{
+.skills-center h3 {
     padding-top: 3rem;
 }
 
-.skills-center > div > p {
+.skills-center>div>p {
     color: rgb(172, 167, 167);
 }
 
 /* .dhaanu>div>h5{ */
-    /* display: none; */
+/* display: none; */
 /* } */
 
-.dhaanu>div>:hover>h5{
-    
+.dhaanu>div>:hover>h5 {
+
     display: block !important
 }
 
-.dhaanu>div>img:hover{
-  /* width: 150px; */
-  /* height: 100px; */
-  padding: 2px;
-  /* border: 2px solid #dd9a05; */
+.dhaanu>div>img:hover {
+    /* width: 150px; */
+    /* height: 100px; */
+    padding: 2px;
+    /* border: 2px solid #dd9a05; */
 }
 
-.dhaanu>div>img{
-  width: 90px;
-  /* height: 100px; */
+.dhaanu>div>img {
+    width: 90px;
+    /* height: 100px; */
 }
 
-.skillImgs{
+.skillImgs {
     display: flex;
     gap: 10px;
     margin-top: 5px;
@@ -508,7 +564,7 @@ a:active{
     font-size: 20px;
 }
 
-.contact-center > p {
+.contact-center>p {
     text-align: center;
 }
 
@@ -525,26 +581,51 @@ footer {
 
 
 
-footer p{
-    color:  #fff;
+footer p {
+    color: #fff;
 }
-footer p span{
+
+footer p span {
     color: #dd9a05;
 }
+
+#git {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    /* border:1px solid black; */
+    justify-content: space-evenly;
+    background-color: rgb(54, 51, 56);
+}
+
+#stats {
+    background-color: rgb(54, 51, 56);
+
+}
+
+#lang {
+    margin-top: 40px
+}
+
+#statistics {
+    margin-top: 30px;
+    margin-bottom: 10px
+}
+
 
 
 /* media query */
 
 /* related to class container */
-@media only screen and (max-width: 1200px){
-    .container{
+@media only screen and (max-width: 1200px) {
+    .container {
         padding: 0 3rem;
     }
 }
 
 /* not related to proj cards */
-@media only screen and (max-width: 780px){
-    .menu{
+@media only screen and (max-width: 780px) {
+    .menu {
         position: fixed;
         top: 0;
         left: -100%;
@@ -555,233 +636,288 @@ footer p span{
         z-index: 100;
         height: 100%;
     }
+
     .menu.show {
         left: 0;
     }
-    .top-nav{
+
+    .top-nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
         background-color: #dd9a05;
         padding: 1rem 1.6rem;
     }
+
     .top-nav .logo span {
         color: #fff;
     }
-    .top-nav .close{
+
+    .top-nav .close {
         color: #fff;
         font-size: 2.3rem;
         padding: 1rem;
         cursor: pointer;
 
     }
-    .hamburger{
+
+    .hamburger {
         display: block;
         color: #fff;
         font-size: 2.3rem;
         padding: 0.5rem;
         cursor: pointer;
     }
-    .nav-link:link, .nav-link:visited{
+
+    .nav-link:link,
+    .nav-link:visited {
         display: block;
         font-size: 1.7rem;
         color: #222;
         padding: 1rem 0;
     }
-    .nav-list{
+
+    .nav-list {
         flex-direction: column;
         align-items: start;
         padding: 1rem 1.6rem;
     }
-    body.show::before{
+
+    body.show::before {
         content: " ";
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
         width: 100%;
         background-color: #000;
         z-index: 1;
     }
+
     .nav.show {
-        background-color: rgba(0, 0,0,0.8);
+        background-color: rgba(0, 0, 0, 0.8);
     }
 }
 
 /*  related to class contacts & nav item about */
-@media only screen and (max-width: 700px){
-    .contacts{
+@media only screen and (max-width: 700px) {
+    .contacts {
         flex-direction: column;
         width: 70%;
         margin: auto;
     }
-    .nav-item>.about
-    {
-        margin-top:-7px
+
+    .nav-item>.about {
+        margin-top: -7px
     }
 }
 
 /*  related to class skills & nav item about */
-@media only screen and (max-width: 800px){
-    .skills-center{
+@media only screen and (max-width: 800px) {
+    .skills-center {
         flex-direction: column;
         width: 50%;
         margin: auto;
         justify-content: center;
     }
-    .skills-center > * {
+
+    .skills-center>* {
         text-align: center;
     }
-    .skillImgs{
+
+    .skillImgs {
         justify-content: center;
     }
-    .nav-item>.about
-    {
-        margin-top:-7px
+
+    .nav-item>.about {
+        margin-top: -7px
     }
 }
 
 /*  related to class skills */
-@media only screen and (max-width: 590px){
-    .skills-center{
+@media only screen and (max-width: 590px) {
+    .skills-center {
         flex-direction: column;
         width: 80%;
         margin: auto;
     }
-    .skills-center > * {
+
+    .skills-center>* {
         text-align: center;
     }
 }
 
 /*  related to project & project image */
-@media only screen and (max-width: 380px){
-    .project{
+@media only screen and (max-width: 380px) {
+    .project {
         padding: 5px;
     }
+
     .project .img-cover {
         border: 1px solid black;
     }
-    .glide__slides{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-        gap:10px
+
+    .glide__slides {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px
+    }
+
+    .home-img {
+
+        margin-top: 600px;
+        margin-left: -100px;
+
     }
 
 }
 
-@media only screen and (max-width: 420px){
-    .project{
+@media only screen and (max-width: 420px) {
+    .project {
         padding: 5px;
     }
+
     .project .img-cover {
         border: 1px solid black;
     }
-    .glide__slides{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-        gap:10px
+
+    .glide__slides {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px
     }
 
 }
 
 /*  related to class right a button class left & nav item about */
-@media only screen and (max-width: 996px){
-    .right h1{
+@media only screen and (max-width: 996px) {
+    .right h1 {
         font-size: 2rem;
     }
+
     .right p {
         font-size: 1.5rem;
     }
+
     a.btn {
         padding: 0.7rem 1.8rem;
     }
-    .left img{
+
+    .left img {
         height: 40rem;
         max-width: 25rem;
     }
-    .nav-item>.about
-    {
-        margin-top:-7px
+
+    .nav-item>.about {
+        margin-top: -7px
     }
 }
 
 /*  related to class left & about */
-@media only screen and (max-width: 768px){
-    .about-center{
+@media only screen and (max-width: 768px) {
+    .about-center {
         grid-template-columns: 1fr;
         gap: 7rem 0;
     }
-     .left {
-         text-align: center;
-     }
-     .left img {
-         height: 40rem;
-         max-width: 90%;
-     }
+
+    .left {
+        text-align: center;
+    }
+
+    .left img {
+        height: 40rem;
+        max-width: 90%;
+    }
 }
 
-/* related to githubstats, class hero & navitem about */
-@media only screen and (max-width: 996px){
-    .hero{
+/* related to githubstats, class homedata & navitem about */
+@media only screen and (max-width: 996px) {
+    .homedata {
         transform: translate(10%, -50%);
     }
-    .githubstats{
+
+    .githubstats {
         width: 100%;
     }
-    .nav-item>.about
-    {
-        margin-top:-7px
+
+    .nav-item>.about {
+        margin-top: -7px
     }
 }
 
-/*  related to class hero & githubstats */
-@media only screen and (max-width: 768px){
-    .hero > h1{
+/*  related to class homedata & githubstats */
+@media only screen and (max-width: 768px) {
+    .homedata>h1 {
         font-size: 4rem;
     }
-    .githubstats{
+
+    .githubstats {
         width: 95%;
     }
 }
 
-/*  related to class hero */
-@media only screen and (max-width: 755px){
-    .hero{
+/*  related to class homedata */
+@media only screen and (max-width: 755px) {
+    .homedata {
         top: 35%;
     }
-    .hero h3{
+
+    .homedata h3 {
         font-size: 2rem;
     }
-    .hero h1{
+
+    .homedata h1 {
         font-size: 5rem;
     }
-    .hero h4{
+
+    .homedata h4 {
         font-size: 2rem;
     }
 }
 
 /*  related to home image */
-@media only screen and (max-width: 900px){
-    .home-img{
+@media only screen and (max-width: 900px) {
+    .home-img {
         width: 220px;
         height: 220px;
         margin-top: 300px;
         justify-content: center;
     }
+
+    #git {
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        /* border: 3px solid violet */
+    }
+
+
+
+
+    #insidestats {
+        margin-bottom: -100px;
+
+    }
 }
 
 /*  related to home image */
-@media only screen and (max-width: 700px){
-    .home-img{
+@media only screen and (max-width: 700px) {
+    .home-img {
         width: 180px;
         height: 180px;
         margin-top: 350px;
         justify-content: center;
     }
+
+    .glide__slides {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px
+    }
 }
 
 /*  related to home image */
-@media only screen and (max-width: 550px){
-    .home-img{
+@media only screen and (max-width: 550px) {
+    .home-img {
         width: 150px;
         height: 150px;
         margin-top: 350px;
@@ -789,10 +925,37 @@ footer p span{
     }
 }
 
-/*  related to home image */
-@media only screen and (max-width: 400px){
-    .home-img{
-        display: none;
+
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .project {
+        height: 600px
     }
 }
 
+
+@media only screen and (max-width: 380px) {
+    .home-img {
+
+        margin-top: 350px;
+        margin-left: -100px;
+
+    }
+
+    .homedata h1{
+        font-size:36px
+    }
+}
+
+@media only screen and  (min-width: 390px) and (max-width: 500px) {
+    .home-img {
+
+        margin-top: 450px;
+        margin-left: -120px;
+
+    }
+    .homedata h1{
+        font-size:40px
+    }
+    
+}
