@@ -10,7 +10,9 @@ const project = document.getElementsByClassName("nav-link projects")
 const contact = document.getElementsByClassName("nav-link contact")
 
 
-
+let resumebtn2=document.getElementById("resume-button-2").addEventListener("click",()=>{
+    window.open("https://drive.google.com/file/d/1rWEl6xAC2G2nHIcyqk2ZmsKp6HjtEeRm/view?usp=sharing","_blank")
+  })
 
 const bd = document.getElementById("bd")
 const bd2 = document.getElementById("bd2")
