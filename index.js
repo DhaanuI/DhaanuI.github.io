@@ -9,9 +9,9 @@ const about = document.getElementsByClassName("nav-link about")
 const project = document.getElementsByClassName("nav-link projects")
 const contact = document.getElementsByClassName("nav-link contact")
 
-function resume() {
-    window.open("Dhaanu_I_Resume.pdf", "_blank")
-}
+// function resume() {
+//     window.open("Dhaanu_I_Resume.pdf", "_blank")
+// }
 
 const bd = document.getElementById("bd")
 const bd2 = document.getElementById("bd2")
