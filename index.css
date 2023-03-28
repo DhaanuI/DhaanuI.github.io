@@ -216,7 +216,7 @@ li {
     /* background-color: rgb(54, 51, 56);color:rgb(54, 51, 56);border:1px */
     color: white;
     font-family: Poppins, sans-serif;
-    background-color: rgb(54, 51, 56);
+    background-color: transparent;
 
 }
 
@@ -682,7 +682,7 @@ footer p span {
     .nav-list {
         flex-direction: column;
         align-items: start;
-        padding: 1rem 1.6rem;
+        padding: 1rem 2rem;
     }
 
     body.show::before {
@@ -697,6 +697,22 @@ footer p span {
 
     .nav.show {
         background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #resume-button-1 a {
+       
+        color: black;
+        font-family: Poppins, sans-serif;
+        background-color: white;
+    
+    }
+
+    #resume-button-1 a:hover {
+       
+        background-color: #dd9a05;
+        border-radius: 5%;
+        
+    
     }
 }
 
