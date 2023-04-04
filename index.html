@@ -21,78 +21,65 @@
 </head>
 
 <body>
-    <header class="header" id="home">
-        <nav class="navbar" id="nav-menu">
-            <div class="navContainer">
-                <a href="#" class="logo">  
-                    <h2 style="color:#dd9a05">Dhaanu I</h2>
-                </a>
-                <div class="menu">
-                    <div class="top-nav">
-                        <a href="#" class="logo">
-                            <p>&lt;Dhaanu I&gt;</p>
-                        </a>
-                        <div class="close">
-                            <i class="fas fa-times"></i>
-                        </div>
+    <nav class="navbar" id="nav-menu">
+        <div class="navContainer">
+            <a href="#" class="logo">
+                <h2 style="color:#dd9a05">Dhaanu I</h2>
+            </a>
+            <div class="menu">
+                <div class="top-nav">
+                    <a href="#" class="logo">
+                        <p>&lt;Dhaanu I&gt;</p>
+                    </a>
+                    <div class="close">
+                        <i class="fas fa-times"></i>
                     </div>
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#skills" class="nav-link skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#projects" class="nav-link projects">Projects</a>
-                        </li>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link projects">Projects</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <button id="resume-button-1" class="nav-link resume" onclick="resume()">
-                                <a href="Dhaanu_I_Resume.pdf" id="resume-link-1" download="Dhaanu_I_Resume.pdf">
-                                    Resume <i class="fas fa-arrow-circle-down"></i>
-                                </a>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="resume-button-1" class="nav-link resume" onclick="resume()">
+                            <a href="Dhaanu_I_Resume.pdf" id="resume-link-1" download="Dhaanu_I_Resume.pdf">
+                                Resume <i class="fas fa-arrow-circle-down"></i>
+                            </a>
+                        </button>
+                    </li>
+                </ul>
             </div>
-        </nav>
-
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <header class="header" id="home">
         <div class="wrapper" id="home">
             <div class="detailsLeft" id="simply">
-
                 <div class="homedata">
-                    <h4>Hey, This is</h4>
+                    <h4 class="homedata-h4">Hey, This is</h4><br>
                     <h1 id="user-detail-name">Dhaanu I</h1>
                     <h1 style="color: #dd9a05;">Full Stack Web Developer</h1>
                     <button onclick="resume()" id="resume-button-2" rel="noopener noreferrer">
                         <a id="resume-link-2" href="Dhaanu_I_Resume.pdf" target="_blank" download="Dhaanu_I_Resume.pdf">
                             Resume <i class="fas fa-arrow-circle-down"></i></a>
                     </button>
-
-                </div>
-
-                <div class="icons">
-                    <span id="hoverlinked"><a id="contact-linkedin" target="_blank" rel="noopener noreferrer"
-                            href="https://www.linkedin.com/in/dhaanu/"><i class="fab fa-linkedin"></i></a></span>
-
-                    <h5 style="text-align: center;" class="tooltipLinkedin">Let's connect on LinkedIn </h5>
-                    <span id="hovergit"><a id="contact-github" target="_blank" rel="noopener noreferrer"
-                            href="https://github.com/DhaanuI"><i class="fab fa-github"></i></a></span>
-
-                    <h5 style="text-align: center;" class="tooltipgit">Lets collaborate on GitHub </h5>
                 </div>
             </div>
+
 
             <div class="imgRight">
                 <img class="home-img" src="https://i.postimg.cc/x145sND8/Dhaanu-I-passport-size.jpg" alt="" />
@@ -199,7 +186,6 @@
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
 
-
                             <li class="glide__slide project-card">
                                 <div class="project">
                                     <div class="img-cover">
@@ -212,7 +198,7 @@
                                     </p>
                                     <p><span class="project-tech-stack" style="font-weight: bold;">Tech Stack:</span>
                                         HTML, CSS, JavaScript</p>
-                                    <div>
+                                    <div><br>
                                         <a target="_blank" rel="noopener noreferrer"
                                             href="https://symphonious-beijinho-ddb7b9.netlify.app/"
                                             class="project-deployed-link btn ">Live</a>
@@ -235,7 +221,7 @@
                                     </p>
                                     <p><span class="project-tech-stack" style="font-weight: bold;">Tech Stack:</span>
                                         HTML, CSS, JavaScript </p>
-                                    <div>
+                                    <div><br>
                                         <a target="_blank" rel="noopener noreferrer"
                                             href="https://lustrous-quokka-d5e991.netlify.app/"
                                             class="project-deployed-link btn">Live</a>
@@ -331,7 +317,7 @@
         <br>
 
         <div class="title">
-            <h1 style="text-align: center;">My Github Calender</h1>
+            <h1 id="calen" style="text-align: center;">My Github Calender</h1>
         </div>
 
         <!-- //previously it had only calendar class -->
@@ -412,43 +398,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
- <!-- <p>&lt; Dhaanu I &gt;</p> -->
-<!-- <a id="resume-link-1" class="nav-link resume" target="_blank" rel="noopener noreferrer"
-                                href="Dhaanu_I_Resume.pdf" download="Dhaanu_I_Resume.pdf" onclick="resume()">
-                                Resume <i class="fas fa-arrow-circle-down"></i>
-
-                                <button id="resume-button-1" class="btn" style="background-color: #dd9a05;border:1px">
-                                </button>
-                            </a> -->
-
-
-<!-- <a id="resume-link-2" rel="noopener noreferrer" target="_blank" href="./resume/Dhaanu_I_Resume.pdf"
-                        onclick="window.open('https://drive.google.com/u/0/uc?id=1rWEl6xAC2G2nHIcyqk2ZmsKp6HjtEeRm&export=download')">
-                        Resume <i class="fas fa-arrow-circle-down"></i>
-                        <button id="resume-button-2" class="btn" style="background-color: #dd9a05;border:1px">
-                        </button>
-                    </a> -->
-
-<!-- An Aspiring Full Stack Web Developer who is very much interested in Web
-                    Development and possess skills in Vanilla JavaScript, Node.js and would like to use
-                    the
-                    skills for the
-                    betterment of the company and grow my career along with the organisation that I work in. -->
-
-
-<!-- <h3><i class="fas fa-play"></i> <span id="type1"></span></h3> -->
-
-<!-- 
-                    <a id="resume-link-2" rel="noopener noreferrer" target="_blank" href="Dhaanu_I_Resume.pdf"
-                        download="Dhaanu_I_Resume.pdf" onclick="resume()">
-                        Resume <i class="fas fa-arrow-circle-down"></i>
-                        <button id="resume-button-2" class="btn" style="background-color: #dd9a05;border:1px">
-                        </button>
-                    </a> -->
