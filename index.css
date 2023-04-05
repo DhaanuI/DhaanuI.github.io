@@ -898,16 +898,8 @@ footer p span {
     .nav-item>.about {
         margin-top: -7px
     }
-}
 
-/*  related to home image */
-@media only screen and (max-width: 700px) {
-    .home-img {
-        width: 180px;
-        height: 180px;
-        justify-content: center;
-    }
-
+    
     .glide__slides {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -918,8 +910,18 @@ footer p span {
         height: 20rem;
         width: 40rem;
     }
-
 }
+
+/*  related to home image */
+/* @media only screen and (max-width: 700px) { */
+    /* .home-img {
+        width: 180px;
+        height: 180px;
+        justify-content: center;
+    } */
+
+
+/* } */
 
 
 /*  related to class skills */
@@ -939,8 +941,8 @@ footer p span {
 /*  related to home image */
 @media only screen and (max-width: 550px) {
     .home-img {
-        width: 150px;
-        height: 150px;
+        width: 170px;
+        height: 180px;
         justify-content: center;
     }
 
@@ -1018,6 +1020,9 @@ footer p span {
     .home-img {
         margin-top: 350px;
         margin-left: -100px;
+        width: 170px;
+        height: 170px;
+        justify-content: center;
     }
 
     .homedata h1 {
