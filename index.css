@@ -997,23 +997,27 @@ footer p span {
     }
 
     .project {
-        width: 95%;
+        width: 90%;
         margin: auto;
     }
 
     .project img {
-        height: 20%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .project .img-cover {
+        height: 28%;
         width: 90%;
     }
+
 
 }
 
 @media only screen and (max-width: 380px) {
     .home-img {
-
         margin-top: 350px;
         margin-left: -100px;
-
     }
 
     .homedata h1 {
@@ -1033,6 +1037,7 @@ footer p span {
 
     .project {
         width: 95%;
+        height:auto;
         margin: auto;
     }
 
