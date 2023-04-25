@@ -451,7 +451,22 @@ a.btn {
 
 .skills-center {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; */
+
+
+}
+
+.dhaanu {
+    /* border:1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 80%;
+    padding: 30px;
 }
 
 .skills-center h3 {
@@ -464,40 +479,49 @@ a.btn {
 
 
 .skills-card {
+    display: flex;
+    flex-direction: column;
+
     position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+    /* display: inline-block; */
+    /* border-bottom: 1px dotted black; */
+    /* border:1px solid red; */
+    margin-right: 10px;
+    align-items: center;
+
 }
 
 .skills-card .skills-card-name {
-    visibility: hidden;
+    /* visibility: hidden; */
     width: 120px;
     background-color: wheat;
     color: black;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
+    margin-top: 10px;
 
     /* Position the skills-card text - see examples below! */
-    position: absolute;
+    /* position: absolute;
     z-index: 1;
     width: 120px;
     bottom: 100%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -60px; */
 }
 
+/* 
 .skills-card:hover .skills-card-name {
     margin-bottom: 10px;
     visibility: visible;
 }
+ */
 
 
 
-
-.dhaanu>div>:hover>h5 {
+/* .dhaanu>div>:hover>h5 {
     display: block !important
-}
+} */
 
 .dhaanu>div>img:hover {
     padding: 2px;
@@ -695,7 +719,7 @@ footer p span {
 
 /*  related to class skills & nav item about */
 @media only screen and (max-width: 800px) {
-    .skills-center {
+    /* .skills-center {
         flex-direction: column;
         width: 50%;
         margin: auto;
@@ -708,7 +732,7 @@ footer p span {
 
     .skillImgs {
         justify-content: center;
-    }
+    } */
 
     .nav-item>.about {
         margin-top: -7px
@@ -863,9 +887,6 @@ footer p span {
     .githubstats {
         width: 95%;
     }
-
-
-
 }
 
 /*  related to class homedata */
@@ -899,7 +920,7 @@ footer p span {
         margin-top: -7px
     }
 
-    
+
     .glide__slides {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -912,21 +933,11 @@ footer p span {
     }
 }
 
-/*  related to home image */
-/* @media only screen and (max-width: 700px) { */
-    /* .home-img {
-        width: 180px;
-        height: 180px;
-        justify-content: center;
-    } */
-
-
-/* } */
 
 
 /*  related to class skills */
 @media only screen and (max-width: 590px) {
-    .skills-center {
+    /* .skills-center {
         flex-direction: column;
         width: 80%;
         margin: auto;
@@ -934,7 +945,7 @@ footer p span {
 
     .skills-center>* {
         text-align: center;
-    }
+    } */
 }
 
 
@@ -1042,7 +1053,7 @@ footer p span {
 
     .project {
         width: 95%;
-        height:auto;
+        height: auto;
         margin: auto;
     }
 
@@ -1056,5 +1067,31 @@ footer p span {
     .homedata h1 {
         font-size: 40px
     }
+}
 
+
+@media only screen and (min-width: 625px) and (max-width: 850px) {
+    .dhaanu {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 624px) {
+    .dhaanu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 449px) {
+    .dhaanu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 }
