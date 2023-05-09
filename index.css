@@ -39,9 +39,6 @@ li {
     list-style: none;
 }
 
-
-
-
 .container {
     max-width: 114rem;
     margin: 0 auto;
@@ -104,12 +101,11 @@ li {
 .nav-link.resume {
     display: block;
     font-size: 1.7rem;
-    /* color: #222; */
-    /* padding: 1rem 0; */
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
+
 
 .nav-link.resume:hover {
     border-radius: 0.3rem;
@@ -129,10 +125,7 @@ li {
     text-decoration: none;
 }
 
-
-
 #resume-button-1 {
-    /* background-color: rgb(54, 51, 56);color:rgb(54, 51, 56);border:1px */
     color: white;
     font-family: Poppins, sans-serif;
     background-color: transparent;
@@ -141,7 +134,7 @@ li {
 
 #resume-button-1:hover {
     background-color: #dd9a05;
-    /* color:#dd9a05 */
+
 }
 
 .nav-link:hover {
@@ -196,9 +189,7 @@ li {
 
 
 .homedata {
-    /* padding-left:8% ; */
     color: #fff;
-    /* border:1px solid black; */
     padding: 120px 0;
 }
 
@@ -236,8 +227,6 @@ li {
 .homedata:hover {
     background-color: transparent;
 }
-
-
 
 .section {
     padding: 5rem 0 7rem 0;
@@ -328,7 +317,6 @@ a.btn {
 
 #resume-button-2 {
     display: inline-block;
-    /* padding: 1rem 2rem; */
     background-color: #dd9a05;
     color: #fff;
     border-radius: 0.5rem;
@@ -380,7 +368,6 @@ a.btn {
     border-bottom: 4px solid transparent;
     transition: all 300ms ease-in-out;
     height: 58rem;
-
 }
 
 .project .img-cover {
@@ -391,7 +378,6 @@ a.btn {
     width: 43rem;
     margin: 2px auto;
     transition: all 300ms ease-in-out;
-
 }
 
 .project .img-cover img {
@@ -410,7 +396,6 @@ a.btn {
     width: 80%;
     margin: 0 auto 1rem auto;
 }
-
 
 .project:hover {
     color: #dd9a05;
@@ -452,16 +437,9 @@ a.btn {
 .skills-center {
     display: flex;
     justify-content: space-evenly;
-
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px; */
-
-
 }
 
 .dhaanu {
-    /* border:1px solid red; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
@@ -477,22 +455,16 @@ a.btn {
     color: rgb(172, 167, 167);
 }
 
-
 .skills-card {
     display: flex;
     flex-direction: column;
-
     position: relative;
-    /* display: inline-block; */
-    /* border-bottom: 1px dotted black; */
-    /* border:1px solid red; */
     margin-right: 10px;
     align-items: center;
 
 }
 
 .skills-card .skills-card-name {
-    /* visibility: hidden; */
     width: 120px;
     background-color: wheat;
     color: black;
@@ -501,27 +473,7 @@ a.btn {
     border-radius: 6px;
     margin-top: 10px;
 
-    /* Position the skills-card text - see examples below! */
-    /* position: absolute;
-    z-index: 1;
-    width: 120px;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px; */
 }
-
-/* 
-.skills-card:hover .skills-card-name {
-    margin-bottom: 10px;
-    visibility: visible;
-}
- */
-
-
-
-/* .dhaanu>div>:hover>h5 {
-    display: block !important
-} */
 
 .dhaanu>div>img:hover {
     padding: 2px;
@@ -561,8 +513,6 @@ footer {
     padding: 1.6rem 1rem;
     text-align: center;
 }
-
-
 
 footer p {
     color: #fff;
@@ -619,9 +569,8 @@ footer p span {
         height: 100%;
         width: 100%;
     }
-
-
 }
+
 
 /* related to githubstats, class homedata & navitem about */
 @media only screen and (max-width: 996px) {
@@ -683,6 +632,7 @@ footer p span {
     }
 }
 
+
 /*  related to home image */
 @media only screen and (max-width: 900px) {
     .home-img {
@@ -716,6 +666,7 @@ footer p span {
         height: auto;
     }
 }
+
 
 /*  related to class skills & nav item about */
 @media only screen and (max-width: 800px) {
@@ -861,6 +812,7 @@ footer p span {
     }
 }
 
+
 /*  related to class left & about */
 @media only screen and (max-width: 768px) {
     .about-center {
@@ -878,6 +830,7 @@ footer p span {
     }
 }
 
+
 /*  related to class homedata & githubstats */
 @media only screen and (max-width: 768px) {
     .homedata>h1 {
@@ -888,6 +841,7 @@ footer p span {
         width: 95%;
     }
 }
+
 
 /*  related to class homedata */
 @media only screen and (max-width: 755px) {
@@ -907,6 +861,7 @@ footer p span {
         font-size: 2rem;
     }
 }
+
 
 /*  related to class contacts & nav item about */
 @media only screen and (max-width: 700px) {
@@ -993,10 +948,8 @@ footer p span {
     .imgRight {
         margin-top: -330px
     }
-
-
-
 }
+
 
 @media only screen and (max-width: 420px) {
     .project {
@@ -1023,8 +976,6 @@ footer p span {
         height: 28%;
         width: 90%;
     }
-
-
 }
 
 @media only screen and (max-width: 380px) {
@@ -1063,6 +1014,7 @@ footer p span {
     }
 }
 
+
 @media only screen and (min-width: 390px) and (max-width: 500px) {
     .homedata h1 {
         font-size: 40px
@@ -1072,13 +1024,13 @@ footer p span {
 
 @media only screen and (min-width: 625px) and (max-width: 850px) {
     .dhaanu {
-
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
 
     }
 }
+
 
 @media only screen and (min-width: 450px) and (max-width: 624px) {
     .dhaanu {
@@ -1087,6 +1039,7 @@ footer p span {
         gap: 20px;
     }
 }
+
 
 @media only screen and (max-width: 449px) {
     .dhaanu {
