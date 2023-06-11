@@ -73,25 +73,38 @@ navLink.addEventListener('click', () => {
 
 // navbar fixation 
 const navHeight = navBar.getBoundingClientRect().height
+
+
+// back to top button
+var button = document.getElementById("back-to-top-button");
+
+
 window.addEventListener('scroll', () => {
     const scrollHeight = window.pageYOffset
     if (scrollHeight > navHeight) {
         navBar.classList.add('fix-nav')
     } else {
         navBar.classList.remove('fix-nav')
+    }
 
+
+
+
+    if (window.scrollY > 100) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
     }
 })
 
 
 
-
-
-
-
-
-
-
+button.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
 
 
 
