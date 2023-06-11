@@ -1301,23 +1301,3 @@ footer p span {
 
 
 
-/* back to top button */
-#back-to-top-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    padding: 10px;
-    background-color:white;
-    color:#4e54c8;
-    font-size: small;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#back-to-top-button:hover {
-    background-color: #4e54c8;
-    color:white
-}
-

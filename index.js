@@ -75,9 +75,6 @@ navLink.addEventListener('click', () => {
 const navHeight = navBar.getBoundingClientRect().height
 
 
-// back to top button
-var button = document.getElementById("back-to-top-button");
-
 
 window.addEventListener('scroll', () => {
     const scrollHeight = window.pageYOffset
@@ -87,24 +84,8 @@ window.addEventListener('scroll', () => {
         navBar.classList.remove('fix-nav')
     }
 
-
-
-
-    if (window.scrollY > 100) {
-        button.style.display = "block";
-    } else {
-        button.style.display = "none";
-    }
 })
 
-
-
-button.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
 
 
 
