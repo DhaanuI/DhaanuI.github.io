@@ -82,9 +82,9 @@
 
     <!-- < ------------- HOME --------------- > -->
 
-    <header class="header" id="home" >
+    <header class="header" id="home">
         <div class="wrapper" id="home">
-            <div data-aos="fade-right" class="detailsLeft" id="simply">
+            <div data-aos="fade-down" class="detailsLeft" id="simply">
                 <div class="homedata">
                     <h4 class="homedata-h4">Hey, This is</h4><br>
                     <h1 id="user-detail-name">Dhaanu I</h1>
@@ -92,7 +92,7 @@
                 </div>
             </div>
 
-            <div data-aos="fade-left" class="imgRight">
+            <div data-aos="fade-down" class="imgRight">
                 <img class="home-img" src="https://i.postimg.cc/x145sND8/Dhaanu-I-passport-size.jpg" alt="" />
 
             </div>
@@ -141,13 +141,15 @@
                             I am eager to apply my skills and expertise to contribute to the Organization's vision and
                             mission, while simultaneously advancing my own professional growth.
                         </p>
+                        <div data-aos="zoom-in">
+                            <button onclick="resume()" id="resume-button-2" class="buttonfx slideleft"
+                                rel="noopener noreferrer">
+                                <a id="resume-link-2" href="Dhaanu_I_Resume.pdf" target="_blank"
+                                    download="Dhaanu_I_Resume.pdf">
+                                    Resume <i class="fas fa-arrow-circle-down"></i></a>
+                            </button>
+                        </div>
 
-                        <button onclick="resume()" id="resume-button-2" class="buttonfx slideleft"
-                            rel="noopener noreferrer">
-                            <a id="resume-link-2" href="Dhaanu_I_Resume.pdf" target="_blank"
-                                download="Dhaanu_I_Resume.pdf">
-                                Resume <i class="fas fa-arrow-circle-down"></i></a>
-                        </button>
                     </div>
                 </div>
             </section>
@@ -156,7 +158,7 @@
 
         <!-- < ------------- Skills --------------- > -->
 
-        <div data-aos="fade-up"  class="fade">
+        <div data-aos="fade-up" class="fade">
             <section class="skills section" id="skills">
                 <div class="title">
                     <h1>My Skills</h1>
@@ -262,7 +264,7 @@
 
         <!-- < ------------- Projects --------------- > -->
 
-        <section class="section theme" id="projects" >
+        <section class="section theme" id="projects">
             <div class="title">
                 <h1>My Projects</h1>
             </div>
@@ -274,7 +276,7 @@
                             <!--  Buffer  -->
 
                             <li class="glide__slide project-card">
-                                <div data-aos="fade-up-right" class="project">
+                                <div data-aos="fade-up" class="project">
                                     <div class="img-cover">
                                         <img src="https://i.postimg.cc/T1kfnGQW/buffer.png" alt="Buffer" />
                                     </div>
@@ -300,7 +302,7 @@
                             <!--  TripVillas  -->
 
                             <li class="glide__slide project-card">
-                                <div data-aos="fade-up-left" class="project">
+                                <div data-aos="fade-up" class="project">
                                     <div class="img-cover">
                                         <img src="https://i.postimg.cc/t46G4h06/Tripvillas.png" alt="tripvillas" />
                                     </div>
@@ -328,7 +330,7 @@
                             <!--  Snips & Spikes  -->
 
                             <li class="glide__slide project-card">
-                                <div data-aos="fade-up-right" class="project">
+                                <div data-aos="fade-up" class="project">
                                     <div class="img-cover">
                                         <img src="https://i.postimg.cc/q7yJDdgd/snipspikes.png" alt="hairsalon" />
                                     </div>
@@ -361,7 +363,7 @@
                             <!--  DevQuery  -->
 
                             <li class="glide__slide project-card">
-                                <div data-aos="fade-up-left" class="project">
+                                <div data-aos="fade-up" class="project">
                                     <div class="img-cover">
                                         <img src="https://i.postimg.cc/0253wLST/devquery-Landingpage.png" alt="stack" />
                                     </div>
@@ -399,7 +401,7 @@
 
         <!-- < ------------- GITHUB --------------- > -->
 
-        <div class="title" >
+        <div class="title">
             <h1 style="text-align: center;">My Github Statistics</h1>
         </div>
 
@@ -408,7 +410,7 @@
 
         <div id="git">
 
-            <div data-aos="fade-up-right">
+            <div data-aos="fade-up">
                 <div id="lang">
                     <img id="github-top-langs" style="border:2px solid #4e54c8"
                         src="https://github-readme-stats.vercel.app/api/top-langs/?username=dhaanui&show_icons=true&locale=en&layout=compact&theme=transparent"
@@ -417,7 +419,7 @@
 
             </div>
 
-            <div data-aos="fade-up-left">
+            <div data-aos="fade-up">
                 <div id="statistics">
                     <img id="github-stats-card" style="border:2px solid #4e54c8"
                         src="https://github-readme-stats.vercel.app/api?username=dhaanui&show_icons=true&locale=en&theme=transparent"
@@ -428,7 +430,7 @@
         </div>
 
         <!-- < ------------- Stats --------------- > -->
-        <div data-aos="fade-up"  class="fade">
+        <div data-aos="fade-up" class="fade">
             <div id="stats">
                 <div id="insidestats" style="margin: auto;text-align: center;">&nbsp;
                     <img id="github-streak-stats" style="border:2px solid #4e54c8"
@@ -440,12 +442,12 @@
 
         <br><br><br>
 
-        <div class="title" >
+        <div class="title">
             <h1 id="calen" style="text-align: center;">My Github Calender</h1>
         </div>
 
         <!-- //previously it had only calendar class -->
-        <div class="react-activity-calendar calendar" style="width:80%;height:100% ; border:2px solid #4e54c8" >
+        <div class="react-activity-calendar calendar" style="width:80%;height:100% ; border:2px solid #4e54c8">
 
             <!-- Loading stuff -->
             Loading the data just for you.
