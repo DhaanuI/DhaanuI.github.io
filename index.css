@@ -1021,7 +1021,6 @@ footer p span {
 
     .home-img {
         justify-content: center;
-
         width: 220px;
         height: 260px;
     }
@@ -1076,8 +1075,6 @@ footer p span {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px
     }
-
-   
 
     .project a {
         font-size: small;
