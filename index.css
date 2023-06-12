@@ -922,6 +922,11 @@ footer p span {
     .homedata h4 {
         font-size: 2rem;
     }
+
+    .area {
+       
+        min-height: 830px;
+    }
 }
 
 
