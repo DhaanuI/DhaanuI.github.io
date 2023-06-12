@@ -723,20 +723,6 @@ footer p span {
 
 
 @media only screen and (max-width: 800px) {
-    /* .skills-center {
-        flex-direction: column;
-        width: 50%;
-        margin: auto;
-        justify-content: center;
-    }
-
-    .skills-center>* {
-        text-align: center;
-    }
-
-    .skillImgs {
-        justify-content: center;
-    } */
 
     .nav-item>.about {
         margin-top: -7px
@@ -765,6 +751,7 @@ footer p span {
         transition: all 500ms ease-in-out;
         z-index: 100;
         height: 100%;
+       
     }
 
     .menu.show {
@@ -775,8 +762,9 @@ footer p span {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #dd9a05;
+        background-color:#304c88;
         padding: 1rem 1.6rem;
+      
     }
 
     .top-nav .logo span {
@@ -792,13 +780,13 @@ footer p span {
     }
 
     .detailsLeft {
-        /* border:1px solid rgb(168, 29, 29); */
+       
         padding-top: -10px
     }
 
     .imgRight {
         padding-top: 40px;
-        /* border:1px solid rgb(168, 29, 29); */
+       
     }
 
     .imgRight img {
@@ -1032,9 +1020,6 @@ footer p span {
 @media only screen and (max-width: 390px) {
 
     .home-img {
-        margin-top: 350px;
-        margin-left: -100px;
-
         justify-content: center;
 
         width: 220px;
@@ -1092,9 +1077,7 @@ footer p span {
         gap: 30px
     }
 
-    .imgRight {
-        margin-top: -330px
-    }
+   
 
     .project a {
         font-size: small;
