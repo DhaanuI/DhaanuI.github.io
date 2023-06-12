@@ -155,8 +155,8 @@ li {
 
 
 .home-img {
-    height: 350px;
-    width: 340px;
+    height: 400px;
+    width: 350px;
     border-radius: 50%;
 }
 
@@ -559,18 +559,9 @@ footer p span {
 }
 
 #git {
-    /* display: flex; */
     margin: auto;
     text-align: center;
-    /* justify-content: space-evenly; */
-    /* background-color: #4e54c8; */
 }
-
-/* #stats {
-    background-color: #4e54c8;
-
-} */
-
 
 
 #github-top-langs {
@@ -630,7 +621,6 @@ footer p span {
 }
 
 
-
 @media only screen and (max-width: 996px) {
 
     .right h1 {
@@ -659,13 +649,13 @@ footer p span {
     }
 
     .homedata {
-        /* text-align: center; */
         padding: 80px 0 35px 30px;
     }
 
     .imgRight {
         margin-left: -10px;
-        margin-right: 20px
+        margin-right: 20px;
+
     }
 
     .glide__slides {
@@ -690,6 +680,12 @@ footer p span {
     }
 }
 
+
+@media only screen and (min-width: 780px) and (max-width: 996px) {
+    .imgRight {
+        margin-top: 40px
+    }
+}
 
 
 @media only screen and (max-width: 900px) {
@@ -726,7 +722,6 @@ footer p span {
 }
 
 
-
 @media only screen and (max-width: 800px) {
     /* .skills-center {
         flex-direction: column;
@@ -745,6 +740,16 @@ footer p span {
 
     .nav-item>.about {
         margin-top: -7px
+    }
+}
+
+
+@media only screen and (min-width: 625px) and (max-width: 850px) {
+    .dhaanu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
     }
 }
 
@@ -890,10 +895,7 @@ footer p span {
         height: 40rem;
         max-width: 90%;
     }
-}
 
-
-@media only screen and (max-width: 768px) {
     .homedata>h1 {
         font-size: 4rem;
     }
@@ -901,8 +903,6 @@ footer p span {
     .githubstats {
         width: 95%;
     }
-
-
 }
 
 
@@ -924,6 +924,7 @@ footer p span {
     }
 }
 
+
 @media only screen and (max-width: 700px) {
     .contacts {
         flex-direction: column;
@@ -934,7 +935,6 @@ footer p span {
     .nav-item>.about {
         margin-top: -7px
     }
-
 
     .glide__slides {
         display: grid;
@@ -950,22 +950,43 @@ footer p span {
     #user-detail-intro {
         font-size: 16px
     }
+
+    .area {
+        background: #4e54c8;
+        background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+        width: 100%;
+        min-height: 870px;
+    }
 }
+
+
+@media only screen and (max-width: 650px) {
+    .imgRight {
+        width: 350px;
+    }
+}
+
 
 @media only screen and (max-width: 590px) {
     .area {
         background: #4e54c8;
         background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
         width: 100%;
-        min-height: 850px;
+        min-height: 900px;
+    }
+
+    .imgRight {
+        /* border:1px solid black; */
+        width: 350px;
+
     }
 }
 
 
 @media only screen and (max-width: 550px) {
     .home-img {
-        width: 220px;
-        height: 230px;
+        width: 320px;
+        height: 360px;
         justify-content: center;
     }
 
@@ -984,13 +1005,35 @@ footer p span {
     }
 }
 
+
+@media only screen and (min-width: 450px) and (max-width: 624px) {
+    .dhaanu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 449px) {
+    .dhaanu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+
 @media only screen and (max-width: 390px) {
 
     .home-img {
         margin-top: 350px;
         margin-left: -100px;
-      
+
         justify-content: center;
+
+        width: 220px;
+        height: 260px;
     }
 
     .area {
@@ -1014,7 +1057,7 @@ footer p span {
     .project .img-cover {
         height: 100%;
         width: 90%;
-        border:none
+        border: none
     }
 
 
@@ -1099,9 +1142,9 @@ footer p span {
         width: 80%;
     }
 
-    .left img{
-        width:100%;
-        height:auto
+    .left img {
+        width: 100%;
+        height: auto
     }
 }
 
@@ -1116,18 +1159,18 @@ footer p span {
 
     }
 
-    #statistics{
+    #statistics {
         margin-top: -5px;
     }
 
-    #github-streak-stats{
-        width:80%;
+    #github-streak-stats {
+        width: 80%;
         margin-left: -10px
     }
 
-    .left img{
-        width:100%;
-        height:auto
+    .left img {
+        width: 100%;
+        height: auto
     }
 
 }
@@ -1136,6 +1179,12 @@ footer p span {
 @media only screen and (min-width: 390px) and (max-width: 500px) {
     .homedata h1 {
         font-size: 40px
+    }
+
+    .home-img {
+        width: 220px;
+        height: 260px;
+        justify-content: center;
     }
 
     #github-streak-stats {
@@ -1169,53 +1218,25 @@ footer p span {
 }
 
 
-@media only screen and (min-width: 625px) and (max-width: 850px) {
-    .dhaanu {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-
-    }
-}
-
-
-@media only screen and (min-width: 450px) and (max-width: 624px) {
-    .dhaanu {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-}
-
-
-@media only screen and (max-width: 449px) {
-    .dhaanu {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-    }
-}
-
-
 @media only screen and (max-width: 300px) {
     .title h1 {
         font-size: 2rem;
-    letter-spacing: 1.1rem;
+        letter-spacing: 1.1rem;
     }
 
-    .project h1, 
-    .project p{
+    .project h1,
+    .project p {
         font-size: small;
     }
 
-    body{
-        margin:auto
+    body {
+        margin: auto
     }
 
-    .theme .project-card{
+    .theme .project-card {
         /* border:1px solid black;
        margin:auto; */
-       margin-left:-10px
+        margin-left: -10px
     }
 
 }
@@ -1249,7 +1270,6 @@ footer p span {
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
-
 }
 
 .circles li:nth-child(1) {
@@ -1331,7 +1351,6 @@ footer p span {
 
 
 @keyframes animate {
-
     0% {
         transform: translateY(0) rotate(0deg);
         opacity: 1;
@@ -1343,7 +1362,6 @@ footer p span {
         opacity: 0;
         border-radius: 50%;
     }
-
 }
 
 
