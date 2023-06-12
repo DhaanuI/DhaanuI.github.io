@@ -15,7 +15,8 @@ html {
 }
 
 body {
-    overflow-x: hidden; /* Hide scrollbars */
+    overflow-x: hidden;
+    /* Hide scrollbars */
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
@@ -285,15 +286,6 @@ li {
     margin-bottom: 2rem;
 }
 
-.githubstats {
-    width: 60%;
-    margin: auto;
-}
-
-.githubstats1 {
-    width: 100%;
-}
-
 
 .right h1 {
     margin-bottom: 2rem;
@@ -337,7 +329,6 @@ a.btn {
     font-family: Poppins, sans-serif;
     font-size: large;
     height: 0px;
-    
 } */
 
 
@@ -585,10 +576,12 @@ footer p span {
 #github-top-langs {
     border: 1px solid #4e54c8;
     width: 400px;
+    border-radius: 20px;
 }
 
 #github-stats-card {
     border: 1px solid #4e54c8;
+    border-radius: 20px;
     width: 400px;
     margin-top: 10px
 }
@@ -596,7 +589,9 @@ footer p span {
 #github-streak-stats {
     width: 500px;
     border: 1px solid #4e54c8;
+    border-radius: 20px;
 }
+
 
 #lang {
     margin-top: 40px
@@ -611,7 +606,7 @@ footer p span {
 
 /* media query */
 
-/* related to class container */
+
 @media only screen and (max-width: 1200px) {
     .container {
         padding: 0 3rem;
@@ -635,7 +630,7 @@ footer p span {
 }
 
 
-/* related to githubstats, class homedata & navitem about */
+
 @media only screen and (max-width: 996px) {
 
     .right h1 {
@@ -696,7 +691,7 @@ footer p span {
 }
 
 
-/*  related to home image */
+
 @media only screen and (max-width: 900px) {
     .home-img {
         /* width: 220px; */
@@ -731,7 +726,7 @@ footer p span {
 }
 
 
-/*  related to class skills & nav item about */
+
 @media only screen and (max-width: 800px) {
     /* .skills-center {
         flex-direction: column;
@@ -754,7 +749,6 @@ footer p span {
 }
 
 
-/* not related to proj cards */
 @media only screen and (max-width: 780px) {
     .menu {
         position: fixed;
@@ -882,7 +876,6 @@ footer p span {
 }
 
 
-/*  related to class left & about */
 @media only screen and (max-width: 768px) {
     .about-center {
         grid-template-columns: 1fr;
@@ -900,7 +893,6 @@ footer p span {
 }
 
 
-/*  related to class homedata & githubstats */
 @media only screen and (max-width: 768px) {
     .homedata>h1 {
         font-size: 4rem;
@@ -914,7 +906,6 @@ footer p span {
 }
 
 
-/*  related to class homedata */
 @media only screen and (max-width: 755px) {
     .homedata {
         top: 35%;
@@ -933,8 +924,6 @@ footer p span {
     }
 }
 
-
-/*  related to class contacts & nav item about */
 @media only screen and (max-width: 700px) {
     .contacts {
         flex-direction: column;
@@ -963,9 +952,6 @@ footer p span {
     }
 }
 
-
-
-/*  related to class skills */
 @media only screen and (max-width: 590px) {
     .area {
         background: #4e54c8;
@@ -976,7 +962,6 @@ footer p span {
 }
 
 
-/*  related to home image */
 @media only screen and (max-width: 550px) {
     .home-img {
         width: 220px;
@@ -999,15 +984,57 @@ footer p span {
     }
 }
 
+@media only screen and (max-width: 390px) {
 
-/*  related to project & project image */
-@media only screen and (max-width: 380px) {
+    .home-img {
+        margin-top: 350px;
+        margin-left: -100px;
+      
+        justify-content: center;
+    }
+
+    .area {
+        background: #4e54c8;
+        background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+        width: 100%;
+        min-height: 700px;
+    }
+
+
+    .homedata h1 {
+        font-size: 36px
+    }
+
+    .glide__slides {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px
+    }
+
+    .project .img-cover {
+        height: 100%;
+        width: 90%;
+        border:none
+    }
+
+
+    .project {
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+
+    .project img {
+        height: 100%;
+        width: 100%;
+    }
+
     .project {
         padding: 5px;
     }
 
     .project img {
-        height: 20%;
+        height: 100%;
         width: 10%;
     }
 
@@ -1023,6 +1050,12 @@ footer p span {
 
     .project a {
         font-size: small;
+    }
+
+    #github-streak-stats,
+    #github-stats-card,
+    #github-top-langs {
+        width: 80%;
     }
 }
 
@@ -1059,52 +1092,44 @@ footer p span {
     .project a {
         font-size: small;
     }
+
+    #github-streak-stats,
+    #github-stats-card,
+    #github-top-langs {
+        width: 80%;
+    }
+
+    .left img{
+        width:100%;
+        height:auto
+    }
 }
 
-@media only screen and (max-width: 380px) {
-    .home-img {
-        margin-top: 350px;
-        margin-left: -100px;
-        /* width: 0px;
-        height: 170px; */
-        justify-content: center;
+
+@media only screen and (max-width: 405px) {
+    #resume-button-2 {
+        font-size: large;
+        letter-spacing: 0.6rem;
+
+        margin: 15px 0;
+        padding: 14px 40px;
+
     }
 
-    .area {
-        background: #4e54c8;
-        background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-        width: 100%;
-        min-height: 700px;
+    #statistics{
+        margin-top: -5px;
     }
 
-
-    .homedata h1 {
-        font-size: 36px
+    #github-streak-stats{
+        width:80%;
+        margin-left: -10px
     }
 
-    .glide__slides {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px
+    .left img{
+        width:100%;
+        height:auto
     }
 
-    .project .img-cover {
-        height: 18rem;
-        width: 90%;
-    }
-
-
-
-    .project {
-        width: 95%;
-        height: auto;
-        margin: auto;
-    }
-
-    .project img {
-        height: 20%;
-        width: 100%;
-    }
 }
 
 
@@ -1113,12 +1138,16 @@ footer p span {
         font-size: 40px
     }
 
+    #github-streak-stats {
+        width: 90%;
+        border: 1px solid #4e54c8;
+    }
+
+
     .project .img-cover {
         height: 18rem;
         width: 90%;
     }
-
-
 
     .project {
         width: 95%;
@@ -1165,6 +1194,30 @@ footer p span {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
+}
+
+
+@media only screen and (max-width: 300px) {
+    .title h1 {
+        font-size: 2rem;
+    letter-spacing: 1.1rem;
+    }
+
+    .project h1, 
+    .project p{
+        font-size: small;
+    }
+
+    body{
+        margin:auto
+    }
+
+    .theme .project-card{
+        /* border:1px solid black;
+       margin:auto; */
+       margin-left:-10px
+    }
+
 }
 
 
@@ -1299,10 +1352,3 @@ footer p span {
     letter-spacing: 1.1rem;
     text-transform: uppercase;
 }
-
-
-
-/* 
-.fade{
-    width:100%
-} */
