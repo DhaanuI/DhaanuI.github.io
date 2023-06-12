@@ -15,6 +15,7 @@ html {
 }
 
 body {
+    overflow-x: hidden; /* Hide scrollbars */
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
@@ -567,10 +568,10 @@ footer p span {
 }
 
 #git {
-    display: flex;
+    /* display: flex; */
     margin: auto;
     text-align: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     /* background-color: #4e54c8; */
 }
 
@@ -588,12 +589,12 @@ footer p span {
 
 #github-stats-card {
     border: 1px solid #4e54c8;
-    width: 540px;
+    width: 400px;
     margin-top: 10px
 }
 
 #github-streak-stats {
-    width: 600px;
+    width: 500px;
     border: 1px solid #4e54c8;
 }
 
@@ -1301,3 +1302,7 @@ footer p span {
 
 
 
+/* 
+.fade{
+    width:100%
+} */
