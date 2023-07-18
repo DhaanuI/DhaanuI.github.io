@@ -751,7 +751,7 @@ footer p span {
         transition: all 500ms ease-in-out;
         z-index: 100;
         height: 100%;
-       
+
     }
 
     .menu.show {
@@ -762,9 +762,9 @@ footer p span {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color:#304c88;
+        background-color: #304c88;
         padding: 1rem 1.6rem;
-      
+
     }
 
     .top-nav .logo span {
@@ -780,13 +780,13 @@ footer p span {
     }
 
     .detailsLeft {
-       
+
         padding-top: -10px
     }
 
     .imgRight {
         padding-top: 40px;
-       
+
     }
 
     .imgRight img {
@@ -912,7 +912,7 @@ footer p span {
     }
 
     .area {
-       
+
         min-height: 830px;
     }
 }
@@ -1354,4 +1354,28 @@ footer p span {
     font-size: 1.4rem;
     letter-spacing: 1.1rem;
     text-transform: uppercase;
+}
+
+
+
+
+
+.progress-bar {
+    z-index: 10000;
+    position: fixed;
+    background-color: #304c88 !important;
+    width: 100%;
+    height: 1vh;
+}
+
+.filled {
+    z-index: 10000;
+    width: 0%;
+    height: 1vh;
+    border: 0px;
+    background: rgb(41, 56, 161);
+    background: linear-gradient(90deg,
+            rgba(41, 56, 161, 1) 0%,
+            #dd9a05 100%);
+    transition: all 300ms ease-in-out;
 }

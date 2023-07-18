@@ -1,3 +1,12 @@
+const filled = document.querySelector(".filled");
+function update() {
+    filled.style.width = `${(window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100}%`;
+    requestAnimationFrame(update);
+}
+
+update();
+
+
 const menu = document.querySelector(".menu")
 const navOpen = document.querySelector(".hamburger")
 const navClose = document.querySelector(".close")
@@ -12,6 +21,10 @@ const contact = document.getElementsByClassName("nav-link contact")
 function resume() {
     window.open("Dhaanu_I_Resume.pdf", "_blank")
 }
+
+
+
+
 
 const bd = document.getElementById("bd")
 const bd2 = document.getElementById("bd2")
