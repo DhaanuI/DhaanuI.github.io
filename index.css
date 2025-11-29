@@ -158,6 +158,8 @@ li {
     height: 400px;
     width: 350px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .dev {
